@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="Musicstyle.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <!-- Album Art -->
+      <div class="album-art">
+        <img id="track-art" src="images/art.jpg" alt="Album Art" />
+      </div>
+
+      <!-- Song Info -->
+      <div class="song-info">
+        <h2 id="track-name">Track Name</h2>
+        <h4 id="track-artist">Artist Name</h4>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="prev-btn">&#9664;&#9664;</button>
+        <button id="play-btn">&#9654;</button>
+        <button id="next-btn">&#9654;&#9654;</button>
+        <button id="shuffle-btn">Shuffle OFF</button>
+        <button id="repeat-btn">Repeat OFF</button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <input type="range" id="progress-bar" min="0" max="100" value="0" />
+      </div>
+
+      <!-- Playlist -->
+      <ul class="playlist" id="playlist">
+        <!-- Tracks will be dynamically added here -->
+      </ul>
+    </div>
+
+    <script src="Musiclogic.js"></script>
+  </body>
+</html>
